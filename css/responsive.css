@@ -95,6 +95,10 @@
 
 }
 @media (max-width: 640px) {
+    .slide-container {
+       
+        max-width: 300px;
+    }
     .content-header h1.flex{
         display: block;
     }
@@ -186,13 +190,23 @@ ul.bullet-list{
 .meta-block .info-item {
     width: 100%;
 }
+.three-row .image-box img {
+   
+    margin-top: 15px;
+}
+.three-row{
+    margin-top: 58px !important;
+}
+.three-row .text-content p {
+    padding-top: 4px;
+}
 .case-study-outer {
     display: block;
     margin: 0 0 20px;
 }
 .case-study-box {
     width: 100%;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 .case-study-box img.product-logo{
     margin: auto;

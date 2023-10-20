@@ -1,31 +1,62 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const itemsContainer = document.querySelector(".items");
-    const items = document.querySelectorAll(".item");
-    const totalItems = items.length;
-    let currentIndex = 0;
-    const itemWidth = items[0].offsetWidth;
 
-    function showItem(index) {
+document.addEventListener("DOMContentLoaded", function() {
+  const itemsContainer = document.querySelector(".items");
+  const totalItems = document.querySelectorAll(".item").length;
+  const numVisibleItems = 3;
+  const itemWidth = 100 / numVisibleItems;
+  let currentIndex = 0;
+
+  function showItems(index) {
       const offset = -index * itemWidth;
-      itemsContainer.style.transform = `translateX(${offset}px)`;
-    }
+      itemsContainer.style.transform = `translateX(${offset}%)`;
+      updateDots(index);
+  }
 
-    function nextItem() {
+  function nextItems() {
       currentIndex++;
-      if (currentIndex >= totalItems) {
-        currentIndex = 0;
+      if (currentIndex >= totalItems - numVisibleItems + 1) {
+          currentIndex = 0;
       }
-      showItem(currentIndex);
-    }
+      showItems(currentIndex);
+  }
 
-    // Initial display
-    showItem(currentIndex);
+  function updateDots(index) {
+      const dotsContainer = document.querySelector('.slider-dots');
+      dotsContainer.innerHTML = '';
 
-    // Auto-slide every 5 seconds (adjust the interval as needed)
-    const autoSlideInterval = 5000; // 5 seconds
+      for (let i = 0; i < totalItems; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('dot');
+          if (i === index) {
+              dot.classList.add('active');
+          }
+          dotsContainer.appendChild(dot);
+      }
+  }
 
-    setInterval(nextItem, autoSlideInterval);
+  function goToSlide(index) {
+      currentIndex = index;
+      showItems(currentIndex);
+  }
+
+  document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('dot')) {
+          const clickedDotIndex = Array.from(event.target.parentElement.children).indexOf(event.target);
+          goToSlide(clickedDotIndex);
+      }
   });
+
+  showItems(currentIndex);
+
+  const autoSlideInterval = 5000;
+  setInterval(nextItems, autoSlideInterval);
+});
+
+
+
+
+
+
   document.addEventListener('DOMContentLoaded', function() {
     const factBlocks = document.querySelectorAll('.fact-block');
     const descriptionBlocks = document.querySelectorAll('.description-block');

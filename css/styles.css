@@ -980,16 +980,87 @@ strong {
 }
 
 .testimonials .item {
-  text-align: center;
-  max-width: 900px;
+  max-width: 293px;
   margin: auto;
-  background: #081F12;
+  background: #fff;
   color: #fff;
-  padding: 40px 40px 80px 40px;
-  border-radius: 70px;
-  border-bottom-right-radius: 200px;
+  padding: 22px 22px;
+  border-radius: 5px;
 }
-
+.testimonials .item p{
+  color: #6F6F6F;
+  font-family: Inter;
+  padding-bottom: 11px;
+  line-height: 1.4;
+}
+.testimonials .item span{
+  color:#151515;
+  font-family: Inter;
+  font-weight: 400;
+}
+.testimonials h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.testimonials h2 span{
+  border-bottom: 4px solid;
+}
+.testimonials h5{
+  font-family: Outfit;
+  border: 1px solid #DADADA;
+  font-size: 16px;
+  width: fit-content;
+  padding: 8px 25px;
+  border-radius: 27px;
+  margin: 0 auto 38px;
+}
+.testimonial-heading{
+  position: relative;
+  margin-top: 50px;
+}
+.testimonial-heading img{
+  position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: -70px;
+    max-width: 100%;
+}
+.testimonials{
+  margin-bottom: 60px;
+}
+.dot.active{
+  background-color: #1C6A41 !important;
+}
+.dot{
+  background-color: #BEE5D3;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  z-index: 999;
+  position: relative;
+}
+.slider-dots{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 29px;
+}
+.item_inner_user{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+.item_inner_user h6{
+  color: #151515;
+  font-size: 18px;
+  font-family: Inter;
+}
+.testimonials .item span{
+  color: #151515;
+  font-family: Inter;
+}
 .three-row {
   padding: 0 20px;
   align-items: center;
@@ -1236,13 +1307,15 @@ span.place {
   overflow: hidden;
   width: 100%;
   margin: auto;
-  max-width: 800px;
+  max-width: 918px;
   /* Adjust the width as needed */
 }
 
 .items {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  gap: 17px;
 }
 
 .item {
@@ -1392,8 +1465,7 @@ span.place {
 }
 
 .book-demo {
-  background: #fbfcfd;
-  padding: 50px 20px;
+  padding: 0px 20px 52px;
 }
 .book-demo h2{
   text-align: center;
