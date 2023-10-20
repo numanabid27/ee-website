@@ -995,6 +995,7 @@ strong {
   align-items: center;
   display: flex;
   gap: 50px;
+  justify-content: center;
 }
 
 .three-row .image-box {
@@ -1391,6 +1392,27 @@ span.place {
   background: #fbfcfd;
   padding: 50px 20px;
 }
+.book-demo h2{
+  text-align: center;
+  font-size: 39px;
+  padding-bottom: 15px;
+
+}
+.book-demo h2 span{
+  border-bottom: 4px solid #232323;
+}
+.book-demo h4{
+  font-family: IBM Plex Sans;
+  font-size: 32px;
+  color: #232323;
+  font-weight: 400;
+}
+.book-demo p{
+  font-size: 20px;
+  color: #636363;
+  font-family: Inter;
+  padding-top: 18px;
+}
 
 /* .video-outer {
   background: #333;
@@ -1437,7 +1459,7 @@ ul.bullet-list {
   background: #081F12;
 } */
 .docmo-section{
-padding: 80px 0;
+padding: 65px 0;
 }
 .bullet-list{
   display: grid;
@@ -1588,6 +1610,7 @@ padding-bottom: 60px;
   background-repeat: no-repeat;
   background-position: center;
   /* box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24); */
+ 
 }
 .case-study-box h4{
   color: var(--Black, #151515);

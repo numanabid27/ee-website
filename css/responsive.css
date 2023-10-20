@@ -104,10 +104,56 @@
         display: block;
     }
     .legal .legal__links{margin-left: 0;}
-
+    .three-row .text-content p,
+    .box-inner p,
+    .Quality-ul li{
+        font-size: 20px;
+    }
+    .bullet-list2{
+        flex-direction: column;
+    }
+    .book-demo h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+    .three-box {
+        padding: 0 0px;
+    }
+    .content-footer {
+       
+        padding: 70px 19px 32px;
+    }
+    .docmo-section {
+        padding: 50px 0;
+    }
+    .email-temp input{
+        width: 100%;
+    }
+    .bullet-list2__inner{
+        flex-direction: column !important;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .rendering,
+    .rendering2{
+        margin-bottom: 10px;
+    }
     .docmo-title{
-      font-size: 35px;
+      font-size: 35px !important;
+      line-height: 58px;
   }
+  .flex-class{
+    flex-direction: column;
+  }
+  .product-logo{
+    height: unset;
+    margin-bottom:35px !important;
+  }
+  .main-embedded {
+   
+    padding: 32px 27px;
+    margin: 52px auto;
+}
   .docmo-description{
       font-size: 18px;
   }
