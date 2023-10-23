@@ -52,11 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(nextItems, autoSlideInterval);
 });
 
-
-
-
-
-
   document.addEventListener('DOMContentLoaded', function() {
     const factBlocks = document.querySelectorAll('.fact-block');
     const descriptionBlocks = document.querySelectorAll('.description-block');
