@@ -865,6 +865,9 @@ strong {
   ul.footer__nav {
     margin-bottom: 20px;
   }
+  .descriptions-container{
+    position: static !important;
+  }
 
   .submenu {
     display: none;
@@ -959,6 +962,9 @@ strong {
 
 .mt-50 {
   margin-top: 50px;
+}
+.mt-47 {
+  margin-top: 47px;
 }
 
 .mb-50 {
@@ -1083,7 +1089,7 @@ strong {
 .three-row .text-content {
   width: 100%;
   max-width: 529px;
-  padding: 7px 17px;
+  padding: 14px 22px;
 }
 
 .three-row .text-content h2 {
@@ -1208,6 +1214,21 @@ strong {
   top: 0;
   left: 84px;
   background-size: cover;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.inner1::after{
+  position: absolute;
+  content: '';
+  background-image: url(../images/arrow1.png);
+  background-repeat: no-repeat;
+  width:0;
+  height: 41px;
+  top: 0;
+  left: 84px;
+  background-size: cover;
+  background-color: transparent;
+  transition: 0.8s;
 }
 .inner2::before{
   position: absolute;
@@ -1220,6 +1241,30 @@ strong {
   left: 84px;
   background-size: cover;
 }
+.inner2::after{
+  position: absolute;
+  content: '';
+  background-image: url(../images/arrow2.png);
+  background-repeat: no-repeat;
+  width: 0;
+  height: 49px;
+  top: 16px;
+  left: 84px;
+  background-size: cover;
+  transition: 0.8s;
+}
+.box-inner1:hover .inner1::after,
+.box-inner2:hover .inner2::after
+{
+  width: 260px;
+}
+.box-inner1:hover .inner1::before,
+.box-inner2:hover .inner2::before{
+  opacity: 0;
+}
+
+
+
 @media screen and (max-width: 1350px) {
   .inner1::before{
     width: 233px;

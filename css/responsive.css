@@ -53,7 +53,7 @@
     min-height: 80px;
     height: 10%;
     transition: height 0.3s ease-in-out;
-    z-index: 0;
+    z-index: 9999;
 }
 
 .bar.expanded {
@@ -94,7 +94,15 @@
 }
 
 }
+@media screen and (max-width:767px){
+    .firstBox{
+        background-color: unset;
+    }
+}
 @media (max-width: 640px) {
+    .company-logo{
+        margin-top: 10px !important;
+    }
     .slide-container {
        
         max-width: 300px;
@@ -163,7 +171,7 @@
   }
   .description-block {
     width: 100%;
-    margin: 0 0 10px;
+    margin: 37px 0 10px;
 }
 .facts-container{
     display: none;
@@ -195,7 +203,7 @@ ul.bullet-list{
     margin-top: 15px;
 }
 .three-row{
-    margin-top: 58px !important;
+    margin-top: 25px !important;
 }
 .three-row .text-content p {
     padding-top: 4px;
@@ -218,7 +226,7 @@ ul.bullet-list{
     display: block;
 }
 .marquee-img{
-    width: 150px;
+    width: 95px;
 }
 .video-wrapper{
     max-width: 300px;

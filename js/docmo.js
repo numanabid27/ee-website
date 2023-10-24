@@ -52,42 +52,42 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(nextItems, autoSlideInterval);
 });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const factBlocks = document.querySelectorAll('.fact-block');
-    const descriptionBlocks = document.querySelectorAll('.description-block');
-    const factBlocksContainer = document.querySelector('.facts-container');
-    const initialTop = factBlocksContainer.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    // const testVal = document.getElementById('test')
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const factBlocks = document.querySelectorAll('.fact-block');
+  //   const descriptionBlocks = document.querySelectorAll('.description-block');
+  //   const factBlocksContainer = document.querySelector('.facts-container');
+  //   const initialTop = factBlocksContainer.getBoundingClientRect().top;
+  //   const windowHeight = window.innerHeight;
+  //   // const testVal = document.getElementById('test')
 
-    function updateBlocks() {
-        factBlocks.forEach((block, index) => {
-            const rect = factBlocksContainer.getBoundingClientRect();
-            const descriptionBlock = descriptionBlocks[index];
-            const currentTop = rect.top;
-            const delta = initialTop - currentTop;
-            // testVal.innerHTML = delta
+  //   function updateBlocks() {
+  //       factBlocks.forEach((block, index) => {
+  //           const rect = factBlocksContainer.getBoundingClientRect();
+  //           const descriptionBlock = descriptionBlocks[index];
+  //           const currentTop = rect.top;
+  //           const delta = initialTop - currentTop;
+  //           // testVal.innerHTML = delta
 
-            if (delta > 0 && delta <= 150) {
-                descriptionBlock.style.top = `-${150 - delta}px`
-                // if (-50 < delta && delta < 0) descriptionBlock.style.top = `${delta + 50}px`;
-                // else if (0 < delta && delta < 50) descriptionBlock.style.top = `${delta}px`;
-            } else if (delta > 150 && delta <= 300) {
-                descriptionBlock.style.top = '0';
-            } else {
-                if(delta <= 0) descriptionBlock.style.top = '-150px';
-            }
-        });
-        requestAnimationFrame(updateBlocks);
-    }
+  //           if (delta > 0 && delta <= 150) {
+  //               descriptionBlock.style.top = `-${150 - delta}px`
+  //               // if (-50 < delta && delta < 0) descriptionBlock.style.top = `${delta + 50}px`;
+  //               // else if (0 < delta && delta < 50) descriptionBlock.style.top = `${delta}px`;
+  //           } else if (delta > 150 && delta <= 300) {
+  //               descriptionBlock.style.top = '0';
+  //           } else {
+  //               if(delta <= 0) descriptionBlock.style.top = '-150px';
+  //           }
+  //       });
+  //       requestAnimationFrame(updateBlocks);
+  //   }
 
 
-    const container = document.querySelector('.containers .content'); // Use querySelector to select the element
-    container.addEventListener('scroll', function() {
-      requestAnimationFrame(updateBlocks);
-    });
+  //   const container = document.querySelector('.containers .content'); // Use querySelector to select the element
+  //   container.addEventListener('scroll', function() {
+  //     requestAnimationFrame(updateBlocks);
+  //   });
 
-  });
+  // });
 
   var videoPlayButton,
   videoWrapper = document.getElementsByClassName('video-wrapper')[0],
