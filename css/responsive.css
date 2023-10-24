@@ -1,3 +1,67 @@
+@media screen and (max-width:1100px){
+    .description-block{
+        padding: 17px 10px;
+        height: unset;
+    }
+    .three-row .text-content a {
+        width: 162PX;
+        padding: 12px 18px;
+        margin-top: 13px;
+    }
+    .three-row .text-content p {
+        font-size: 18px;
+        padding-top: 9px;
+        line-height: 30px;
+    }
+    .three-row .text-content h2 {
+        font-size: 28px;
+        
+    }
+    .three-row{
+        margin-top: 27px;
+        gap: 17px;
+    }
+    .box-inner p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .Quality-ul li {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .Quality-ul a {
+        width: 158px;
+        padding: 14px 18px;
+    }
+    .docmo-section {
+        padding: 42px 0;
+    }
+    .docmo-title {
+        font-size: 38px;
+    }
+    .docmo-description {
+        font-size: 22px;
+    }
+    .company-logo h2{
+        margin-top:83px !important ;
+    }
+    .box-inner {
+        width: 29.33%;
+    }
+    .inner1::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    .three-box-outer {
+        gap: 20px;
+    }
+    .box-inner {
+        width: 31.33%;
+    }
+}
+
 
 @media (min-width: 769px) {
     .toggle-button {
